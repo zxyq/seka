@@ -1,0 +1,132 @@
+* {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+body, ul, li, ol, h1, h2, h3, h4, h5, h6, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.list{
+  li{
+    width: percentage(1/21);
+    height: 80px;
+    float: left;
+  }
+}
+//@mixin seka($color,$col){
+//  @for $i from 1 to 11{
+//    $off : 11 - $i;
+//    .list.#{$col} li:nth-child(#{$i}){
+//      background: lighten($color,$off * 5);
+//    }
+//  }
+//  .list.#{$col} li:nth-child(11){
+//    background: $color;
+//  }
+//  @for $i from 1 to 11{
+//    .list.#{$col} li:nth-child(#{$i + 11}){
+//      background: darken($color,$i * 5);
+//    }
+//  }
+//}
+//
+//@include seka(red,'red');
+//@include seka(blue,'blue');
+//@include seka(yellow,'yellow');
+//@include seka(green,'green');
+//@include seka(pink,'pink');
+
+$seka : (
+'red': red,
+'blue':blue,
+'yellow':yellow,
+'green':green,
+'pink':pink,
+);
+.seka {
+  @each $class-name in map_keys($seka){
+    $color : map_get($seka,$class-name);
+    @for $i from 1 to 11 {
+      .#{$class-name} li:nth-child(#{$i}){
+        background:lighten($color,(11-$i) * 5) ;
+      }
+      .#{$class-name} li:nth-child(#{$i+11}){
+        background:darken($color,$i * 5) ;
+      }
+    }
+    .#{$class-name} li:nth-child(11){
+      background:$color;
+    }
+
+  }
+}
+
+/*
+  2016.5.11 例子
+*/
+.container {
+  >li{
+    border: 1px solid cornflowerblue;
+    min-width: 150px;
+    min-height: 500px;
+    float: left;
+    ul li{
+      font-size: 25px;
+      &:hover{
+        background: black;
+      }
+    }
+  }
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+}
+
+/*
+  length($list)
+   nth($list,3)
+   index($list,'selector')
+*/
+
+
+$list:one,two,three,four,five,six,seven,eight;
+$color:red,
+  yellow,
+  blue,
+  #01FF01,
+  white,
+  #FF748C,
+  pink,
+  #CCFFCC;
+
+$theme : (
+  'one':red,
+  'two':yellow,
+  'three':blue,
+  'four':#01FF01,
+  'five':white,
+  'six':#FF748C,
+  'seven':pink,
+  'eight':#CCFFCC,
+);
+@each $class-name in map_keys($theme){
+  $color : map_get($theme,$class-name);
+  li.#{$class-name}{
+    background: $color;
+    ul li{
+      &:hover{
+        color: $color;
+      }
+    }
+  }
+}
+
+

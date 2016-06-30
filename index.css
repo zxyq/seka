@@ -1,0 +1,532 @@
+@charset "UTF-8";
+*::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+body, ul, li, ol, h1, h2, h3, h4, h5, h6, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.list li {
+  width: 4.7619%;
+  height: 80px;
+  float: left;
+}
+
+.seka .red li:nth-child(1) {
+  background: white;
+}
+
+.seka .red li:nth-child(12) {
+  background: #e60000;
+}
+
+.seka .red li:nth-child(2) {
+  background: #ffe6e6;
+}
+
+.seka .red li:nth-child(13) {
+  background: #cc0000;
+}
+
+.seka .red li:nth-child(3) {
+  background: #ffcccc;
+}
+
+.seka .red li:nth-child(14) {
+  background: #b30000;
+}
+
+.seka .red li:nth-child(4) {
+  background: #ffb3b3;
+}
+
+.seka .red li:nth-child(15) {
+  background: #990000;
+}
+
+.seka .red li:nth-child(5) {
+  background: #ff9999;
+}
+
+.seka .red li:nth-child(16) {
+  background: maroon;
+}
+
+.seka .red li:nth-child(6) {
+  background: #ff8080;
+}
+
+.seka .red li:nth-child(17) {
+  background: #660000;
+}
+
+.seka .red li:nth-child(7) {
+  background: #ff6666;
+}
+
+.seka .red li:nth-child(18) {
+  background: #4d0000;
+}
+
+.seka .red li:nth-child(8) {
+  background: #ff4d4d;
+}
+
+.seka .red li:nth-child(19) {
+  background: #330000;
+}
+
+.seka .red li:nth-child(9) {
+  background: #ff3333;
+}
+
+.seka .red li:nth-child(20) {
+  background: #1a0000;
+}
+
+.seka .red li:nth-child(10) {
+  background: #ff1a1a;
+}
+
+.seka .red li:nth-child(21) {
+  background: black;
+}
+
+.seka .red li:nth-child(11) {
+  background: red;
+}
+
+.seka .blue li:nth-child(1) {
+  background: white;
+}
+
+.seka .blue li:nth-child(12) {
+  background: #0000e6;
+}
+
+.seka .blue li:nth-child(2) {
+  background: #e6e6ff;
+}
+
+.seka .blue li:nth-child(13) {
+  background: #0000cc;
+}
+
+.seka .blue li:nth-child(3) {
+  background: #ccccff;
+}
+
+.seka .blue li:nth-child(14) {
+  background: #0000b3;
+}
+
+.seka .blue li:nth-child(4) {
+  background: #b3b3ff;
+}
+
+.seka .blue li:nth-child(15) {
+  background: #000099;
+}
+
+.seka .blue li:nth-child(5) {
+  background: #9999ff;
+}
+
+.seka .blue li:nth-child(16) {
+  background: navy;
+}
+
+.seka .blue li:nth-child(6) {
+  background: #8080ff;
+}
+
+.seka .blue li:nth-child(17) {
+  background: #000066;
+}
+
+.seka .blue li:nth-child(7) {
+  background: #6666ff;
+}
+
+.seka .blue li:nth-child(18) {
+  background: #00004d;
+}
+
+.seka .blue li:nth-child(8) {
+  background: #4d4dff;
+}
+
+.seka .blue li:nth-child(19) {
+  background: #000033;
+}
+
+.seka .blue li:nth-child(9) {
+  background: #3333ff;
+}
+
+.seka .blue li:nth-child(20) {
+  background: #00001a;
+}
+
+.seka .blue li:nth-child(10) {
+  background: #1a1aff;
+}
+
+.seka .blue li:nth-child(21) {
+  background: black;
+}
+
+.seka .blue li:nth-child(11) {
+  background: blue;
+}
+
+.seka .yellow li:nth-child(1) {
+  background: white;
+}
+
+.seka .yellow li:nth-child(12) {
+  background: #e6e600;
+}
+
+.seka .yellow li:nth-child(2) {
+  background: #ffffe6;
+}
+
+.seka .yellow li:nth-child(13) {
+  background: #cccc00;
+}
+
+.seka .yellow li:nth-child(3) {
+  background: #ffffcc;
+}
+
+.seka .yellow li:nth-child(14) {
+  background: #b3b300;
+}
+
+.seka .yellow li:nth-child(4) {
+  background: #ffffb3;
+}
+
+.seka .yellow li:nth-child(15) {
+  background: #999900;
+}
+
+.seka .yellow li:nth-child(5) {
+  background: #ffff99;
+}
+
+.seka .yellow li:nth-child(16) {
+  background: olive;
+}
+
+.seka .yellow li:nth-child(6) {
+  background: #ffff80;
+}
+
+.seka .yellow li:nth-child(17) {
+  background: #666600;
+}
+
+.seka .yellow li:nth-child(7) {
+  background: #ffff66;
+}
+
+.seka .yellow li:nth-child(18) {
+  background: #4d4d00;
+}
+
+.seka .yellow li:nth-child(8) {
+  background: #ffff4d;
+}
+
+.seka .yellow li:nth-child(19) {
+  background: #333300;
+}
+
+.seka .yellow li:nth-child(9) {
+  background: #ffff33;
+}
+
+.seka .yellow li:nth-child(20) {
+  background: #1a1a00;
+}
+
+.seka .yellow li:nth-child(10) {
+  background: #ffff1a;
+}
+
+.seka .yellow li:nth-child(21) {
+  background: black;
+}
+
+.seka .yellow li:nth-child(11) {
+  background: yellow;
+}
+
+.seka .green li:nth-child(1) {
+  background: #80ff80;
+}
+
+.seka .green li:nth-child(12) {
+  background: #006700;
+}
+
+.seka .green li:nth-child(2) {
+  background: #67ff67;
+}
+
+.seka .green li:nth-child(13) {
+  background: #004d00;
+}
+
+.seka .green li:nth-child(3) {
+  background: #4dff4d;
+}
+
+.seka .green li:nth-child(14) {
+  background: #003400;
+}
+
+.seka .green li:nth-child(4) {
+  background: #34ff34;
+}
+
+.seka .green li:nth-child(15) {
+  background: #001a00;
+}
+
+.seka .green li:nth-child(5) {
+  background: #1aff1a;
+}
+
+.seka .green li:nth-child(16) {
+  background: #000100;
+}
+
+.seka .green li:nth-child(6) {
+  background: #01ff01;
+}
+
+.seka .green li:nth-child(17) {
+  background: black;
+}
+
+.seka .green li:nth-child(7) {
+  background: #00e600;
+}
+
+.seka .green li:nth-child(18) {
+  background: black;
+}
+
+.seka .green li:nth-child(8) {
+  background: #00cd00;
+}
+
+.seka .green li:nth-child(19) {
+  background: black;
+}
+
+.seka .green li:nth-child(9) {
+  background: #00b300;
+}
+
+.seka .green li:nth-child(20) {
+  background: black;
+}
+
+.seka .green li:nth-child(10) {
+  background: #009a00;
+}
+
+.seka .green li:nth-child(21) {
+  background: black;
+}
+
+.seka .green li:nth-child(11) {
+  background: green;
+}
+
+.seka .pink li:nth-child(1) {
+  background: white;
+}
+
+.seka .pink li:nth-child(12) {
+  background: #ffa7b6;
+}
+
+.seka .pink li:nth-child(2) {
+  background: white;
+}
+
+.seka .pink li:nth-child(13) {
+  background: #ff8da1;
+}
+
+.seka .pink li:nth-child(3) {
+  background: white;
+}
+
+.seka .pink li:nth-child(14) {
+  background: #ff748c;
+}
+
+.seka .pink li:nth-child(4) {
+  background: white;
+}
+
+.seka .pink li:nth-child(15) {
+  background: #ff5a77;
+}
+
+.seka .pink li:nth-child(5) {
+  background: white;
+}
+
+.seka .pink li:nth-child(16) {
+  background: #ff4162;
+}
+
+.seka .pink li:nth-child(6) {
+  background: white;
+}
+
+.seka .pink li:nth-child(17) {
+  background: #ff274d;
+}
+
+.seka .pink li:nth-child(7) {
+  background: white;
+}
+
+.seka .pink li:nth-child(18) {
+  background: #ff0e38;
+}
+
+.seka .pink li:nth-child(8) {
+  background: white;
+}
+
+.seka .pink li:nth-child(19) {
+  background: #f3002a;
+}
+
+.seka .pink li:nth-child(9) {
+  background: #fff3f5;
+}
+
+.seka .pink li:nth-child(20) {
+  background: #da0026;
+}
+
+.seka .pink li:nth-child(10) {
+  background: #ffdae0;
+}
+
+.seka .pink li:nth-child(21) {
+  background: #c00022;
+}
+
+.seka .pink li:nth-child(11) {
+  background: pink;
+}
+
+/*
+  2016.5.11 例子
+*/
+.container > li {
+  border: 1px solid cornflowerblue;
+  min-width: 150px;
+  min-height: 500px;
+  float: left;
+}
+
+.container > li ul li {
+  font-size: 25px;
+}
+
+.container > li ul li:hover {
+  background: black;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*
+  length($list)
+   nth($list,3)
+   index($list,'selector')
+*/
+li.one {
+  background: red;
+}
+
+li.one ul li:hover {
+  color: red;
+}
+
+li.two {
+  background: yellow;
+}
+
+li.two ul li:hover {
+  color: yellow;
+}
+
+li.three {
+  background: blue;
+}
+
+li.three ul li:hover {
+  color: blue;
+}
+
+li.four {
+  background: #01FF01;
+}
+
+li.four ul li:hover {
+  color: #01FF01;
+}
+
+li.five {
+  background: white;
+}
+
+li.five ul li:hover {
+  color: white;
+}
+
+li.six {
+  background: #FF748C;
+}
+
+li.six ul li:hover {
+  color: #FF748C;
+}
+
+li.seven {
+  background: pink;
+}
+
+li.seven ul li:hover {
+  color: pink;
+}
+
+li.eight {
+  background: #CCFFCC;
+}
+
+li.eight ul li:hover {
+  color: #CCFFCC;
+}
